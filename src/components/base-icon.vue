@@ -1,11 +1,14 @@
 <template>
-  <svg
-    class="icon base-icon"
-    aria-hidden="true"
-    :style="{ color, 'font-size': size }"
-  >
-    <use :href="'#' + name"></use>
-  </svg>
+  <span>
+    <svg
+      class="icon base-icon"
+      aria-hidden="true"
+      @click="toclick"
+      :style="{ color, 'font-size': size }"
+    >
+      <use :href="'#' + name"></use>
+    </svg>
+  </span>
 </template>
 
 <script>
@@ -15,6 +18,11 @@ export default {
     name: String,
     color: String,
     size: String
+  },
+  methods: {
+    toclick() {
+      this.$emit('on-lick')
+    }
   }
 }
 </script>
