@@ -34,13 +34,13 @@ export default {
 <style lang="less">
 .index {
   height: 100vh;
-  padding-bottom: 0.64rem;
+  padding-bottom: 1.28rem;
   .main {
     position: relative;
   }
 }
 .tab-bar {
-  height: 0.64rem;
+  height: 1.28rem;
   position: fixed;
   width: 100%;
   left: 0;

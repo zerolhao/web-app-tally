@@ -1,15 +1,39 @@
-@head-height: 0.48rem;
+@head-height: 0.96rem;
 @head-bg: #00bcd4;
 .top-shadow {
-  box-shadow: 0 -0.026667rem 0.08rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -0.053334rem 0.16rem rgba(0, 0, 0, 0.2);
 }
 .bottom-shadow {
-  box-shadow: 0 0.026667rem 0.08rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.053334rem 0.16rem rgba(0, 0, 0, 0.2);
 }
 
 html {
-  font-size: 75px;
+  font-size: 10vw;
 }
 a {
   text-decoration: none;
+}
+.m-r(@n) {
+  margin-right: @n;
+}
+.m-l(@n) {
+  margin-left: @n;
+}
+.m-t(@n) {
+  margin-top: @n;
+}
+.m-b(@n) {
+  margin-bottom: @n;
+}
+.p-r(@n) {
+  padding-right: @n;
+}
+.p-l(@n) {
+  padding-left: @n;
+}
+.p-t(@n) {
+  padding-top: @n;
+}
+.p-b(@n) {
+  padding-bottom: @n;
 }

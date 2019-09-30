@@ -33,19 +33,14 @@ export default {
   height: @head-height;
   background: @head-bg;
   color: #fff;
-  font-size: 0.186667rem;
+  font-size: 0.373334rem;
   .bottom-shadow;
-  // display: grid;
-  // grid-template-columns: minmax(0.96rem, 1fr) auto minmax(0.96rem, 1fr);
-  // grid-column-gap: 0.16rem;
-  // justify-items: center;
-  // align-items: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.12rem;
+  padding: 0 0.24rem;
   .add-touch-area {
-    padding: 0.08rem;
+    padding: 0.16rem;
   }
 }
 </style>
