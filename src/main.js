@@ -4,10 +4,16 @@ import router from './router/router'
 import store from './store/store'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+// reset 浏览器样式
 import './assets/css/reset.css'
+// 全局样式
 import './assets/css/global.less'
 
 Vue.config.productionTip = false
+
+import Navigation from 'vue-navigation'
+
+Vue.use(Navigation, { router, store })
 
 // 全局注册基础组件
 const requireComponent = require.context(

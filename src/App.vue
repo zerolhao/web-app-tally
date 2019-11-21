@@ -1,12 +1,24 @@
 <template>
   <div id="app">
     <!-- <transition> -->
-    <keep-alive>
-      <router-view />
-    </keep-alive>
+    <navigation>
+      <router-view></router-view>
+    </navigation>
     <!-- </transition> -->
   </div>
 </template>
+<script>
+export default {
+  mounted() {
+    this.$navigation.on('forward', (to, from) => {
+      console.log('forward to: ', to.name, 'form: ', from.name)
+    })
+    this.$navigation.on('back', (to, from) => {
+      console.log('back to: ', to.name, 'form: ', from.name)
+    })
+  }
+}
+</script>
 
 <style lang="less">
 #app {
