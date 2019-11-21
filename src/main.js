@@ -15,6 +15,9 @@ import Navigation from 'vue-navigation'
 
 Vue.use(Navigation, { router, store })
 
+// rem 适配
+import 'amfe-flexible'
+
 // 全局注册基础组件
 const requireComponent = require.context(
   // 其组件目录的相对路径

@@ -1,6 +1,8 @@
 <template>
   <div class="container home">
-    home
+    <div class="test">
+      home
+    </div>
   </div>
 </template>
 
@@ -9,4 +11,11 @@ export default {
   name: 'home'
 }
 </script>
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.test {
+  width: 750px;
+  background: #06f;
+  font-size: 32px;
+  color: aqua;
+}
+</style>
